@@ -1,0 +1,43 @@
+theme = "PaperMod"
+# 网站基础设置
+baseURL = "https://CookieManano.github.io/"  # 如果你的用户名是 CookieManana，记得把这里的 o 改成 a
+languageCode = "zh-cn"
+title = "我的技术小站"
+theme = "PaperMod"
+
+# 启用 Emoji 表情支持
+enableEmoji = true
+
+# 菜单栏配置（显示在网页顶部）
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "📝 所有文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "👤 关于我"
+    url = "/about/"
+    weight = 2
+
+# 主题样式微调（让博客更好看）
+[params]
+  env = "production"
+  title = "我的技术小站"
+  description = "记录学习与成长"
+  author = "CookieManano"
+  # 开启首页显示文章摘要
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  # 首页不显示“友情链接”之类的多余块
+  hideFooter = false
+
+  # 社交链接（显示在侧边栏或底部）
+  [[params.socialIcons]]
+    icon = "github"
+    url = "https://github.com/CookieManano"
